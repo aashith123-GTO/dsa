@@ -23,3 +23,18 @@ def Two_sum_optimal(arr, target):
 
 print(Two_sum_optimal([1,2,4,5,6], 9))
     
+
+
+#two pointer approach
+def two_sum_two_ptr(arr,target):
+    left=0
+    right=len(arr)-1
+    while left<right:
+        if arr[left]+arr[right]==target:
+            return [arr[left],arr[right]]
+        elif arr[left]+arr[right]<target:
+            left+=1
+        else:
+            right-=1
+
+print(two_sum_two_ptr([1,2,3,4,5,6],9))
