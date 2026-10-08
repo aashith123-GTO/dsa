@@ -134,19 +134,25 @@ class Deque:
        
             
 
-        return remove_rear
+        return remove_rear,self.queue
 
 
 d = Deque(3)
 
 d.insert_rear(10)
+print(d.queue)
 d.insert_rear(20)
+print(d.queue)
 d.insert_front(5)
-
 print(d.queue)
 
+
 print(d.insert_rear(30))
+print(d.queue)
 print(d.insert_front(1))
+print(d.queue)
 
 print(d.remove_front())
+print(d.queue)
 print(d.remove_rear())
+print(d.queue)
