@@ -4,6 +4,7 @@ result=[0]*len(temp)
 for i in range(len(temp)):
     for j in range(i+1,len(temp)):
         if temp[j]>temp[i]:
+            
             remove=i
             result[remove]=j-remove
             break
